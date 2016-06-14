@@ -9,10 +9,9 @@
 	Border="Thick"
 	BorderStyle="Static"
 	SingleInstance="Yes"
-	icon = "resources/favicon.ico"
 />
 
-<meta http-equiv="x-ua-compatible" content="ie=10"><!-- To enable IE 10 Rendering - IE 11 doesn't play nice with VBScript -->
+<meta http-equiv="x-ua-compatible" content="ie=10">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -180,8 +179,6 @@ img
 			<tr><td width="150px"><label>Label Prefix: </label></td><td><input type="text" name="prefix" id="prefix" onblur='if (validateData()) { labelExample(); } else { $("#labelFormat").val(""); }' /></td></tr>
 			<tr><td>Select a Year: </td><td><select id="selectYear" onblur='if (validateData()) { labelExample(); } else { $("#labelFormat").val(""); }'>
 					<option value="">--- Select a Year ---</option>
-					<!--<option disabled></option>
-					<option disabled>-----------  FS Search  -----------</option>-->
 					<option value="15">2015</option>
 					<option value="16">2016</option>
 					<option value="17">2017</option>
@@ -192,8 +189,6 @@ img
 			<tr><td><label>End Number: </label></td><td><input type="text" name="endNum" id="endNum"  maxlength="5" onblur='if (validateData()) { labelExample(); } else { $("#labelFormat").val(""); }' /></td></tr><!--  &nbsp;&nbsp;<em>(Include leading 0's)</em>-->
 			<tr><td>Labels Per Number: </td><td><select id="quantity" onblur='if (validateData()) { labelExample(); } else { $("#labelFormat").val(""); }'>
 				<option value="">--- # of Duplicates ---</option>
-				<!--<option disabled></option>
-				<option disabled>-----------  FS Search  -----------</option>-->
 				<option value="4">4 Labels</option>
 				<option value="5">5 Labels</option>
 				<option value="6">6 Labels</option>
